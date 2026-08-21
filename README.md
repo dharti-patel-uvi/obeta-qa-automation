@@ -1,2 +1,0 @@
-# obeta-qa-automation
-
