@@ -309,21 +309,18 @@ test.describe("Beaches + default guests + flights + Pay Now with two credit card
 });
 
 test.describe("SSG Look up + Apply points + hold room for $98", () => {
-  // Skip when the configured SSG email looks like a staging credential being run
-  // against prod — the lookup would return no results. Update SSG_LOOKUP_EMAIL /
-  // SSG_LOOKUP_LAST_NAME in .env with a valid prod account to enable this test.
+  // Skip when no SSG email is configured — the lookup would return no results.
+  // Update SSG_LOOKUP_EMAIL / SSG_LOOKUP_LAST_NAME in .env with a valid account
+  // for the target environment to enable this test.
   const ssgEmail = process.env.SSG_LOOKUP_EMAIL || "";
-  const ssgSkip =
-    !ssgEmail ||
-    ((process.env.TARGET_ENV || "dev") === "prod" &&
-      ssgEmail.toLowerCase().includes("stg."));
+  const ssgSkip = !ssgEmail;
 
   test("HP - SSG Look up in step one and apply points in Guest information step", async ({
     page,
   }) => {
     test.skip(
       ssgSkip,
-      "SSG happy-path skipped: update SSG_LOOKUP_EMAIL / SSG_LOOKUP_LAST_NAME in .env with a valid prod account email."
+      "SSG happy-path skipped: update SSG_LOOKUP_EMAIL / SSG_LOOKUP_LAST_NAME in .env with a valid account email for the target environment."
     );
     const room =
       await test.step("Step 1-2: vacation with flights -> room listing", () =>

@@ -45,7 +45,7 @@ export default defineConfig({
   ],
   use: {
     // OBETANG base URL for the selected TARGET_ENV (defaults to dev — set
-    // TARGET_ENV=stg|prod in .env to target another environment).
+    // TARGET_ENV=stg in .env to target the staging environment).
     baseURL: obetangBaseUrl(),
     headless: false,
     trace: "on",

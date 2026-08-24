@@ -170,7 +170,7 @@ const scrResortData: VacationData = {
  */
 test.describe("Beaches: Room selection, room code assertion, and hold amount validation", () => {
   // Multi-booking flow: navigate to room listing twice (resort change), plus
-  // "Keep This Room" round-trip. Allow extra time on slow prod env.
+  // "Keep This Room" round-trip. Allow extra time on a slow environment.
   test.setTimeout(360_000);
 
   test(
@@ -401,7 +401,7 @@ test.describe("Beaches: Room selection, room code assertion, and hold amount val
 
 test.describe("Sandals: Room category and hold amount validation", () => {
   // Each Sandals test navigates vacation → room (with filter retries) → guests.
-  // Allow extra time on slow prod env.
+  // Allow extra time on a slow environment.
   test.setTimeout(200_000);
 
   /**

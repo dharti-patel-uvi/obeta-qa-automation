@@ -7,22 +7,17 @@ import ssg from "../test-data/ssgFixture";
  *
  * Entry (TA Portal → sign in → launch OBETA) is handled by the `page` fixture.
  * The happy-path lookups need a real SSG-linked email in the target env; they
- * skip cleanly when SSG_LOOKUP_EMAIL_1 is unset OR when the configured email is
- * a staging-only credential being run against prod (set SSG_LOOKUP_EMAIL_1 and
- * SSG_LOOKUP_LAST_NAME_1 in .env to a valid prod account to enable them).
+ * skip cleanly when SSG_LOOKUP_EMAIL_1 is unset (set SSG_LOOKUP_EMAIL_1 and
+ * SSG_LOOKUP_LAST_NAME_1 in .env to a valid account to enable them).
  */
 
-// Guard: skip happy-path SSG tests when credentials are missing or are
-// staging-only emails being run against the prod environment.
-const ssgHappyPathSkip =
-  !ssg.validEmail ||
-  ((process.env.TARGET_ENV || "dev") === "prod" &&
-    ssg.validEmail.toLowerCase().includes("stg."));
+// Guard: skip happy-path SSG tests when credentials are missing.
+const ssgHappyPathSkip = !ssg.validEmail;
 
 test('C59098 HP - "Look it up" CTA', async ({ page }) => {
   test.skip(
     ssgHappyPathSkip,
-    "SSG happy-path skipped: update SSG_LOOKUP_EMAIL_1 / SSG_LOOKUP_LAST_NAME_1 in .env with a valid prod account email."
+    "SSG happy-path skipped: update SSG_LOOKUP_EMAIL_1 / SSG_LOOKUP_LAST_NAME_1 in .env with a valid account email for the target environment."
   );
   const vacation = new VacationPage(page);
 
@@ -43,7 +38,7 @@ test('C59098 HP - "Look it up" CTA', async ({ page }) => {
 test("C60931 HP - Start a new search CTA", async ({ page }) => {
   test.skip(
     ssgHappyPathSkip,
-    "SSG happy-path skipped: update SSG_LOOKUP_EMAIL_1 / SSG_LOOKUP_LAST_NAME_1 in .env with a valid prod account email."
+    "SSG happy-path skipped: update SSG_LOOKUP_EMAIL_1 / SSG_LOOKUP_LAST_NAME_1 in .env with a valid account email for the target environment."
   );
   const vacation = new VacationPage(page);
   await vacation.openSsgLookup();
@@ -115,7 +110,7 @@ test("C60932 SP - User inputs a valid email address with trailing spaces", async
 }) => {
   test.skip(
     ssgHappyPathSkip,
-    "SSG happy-path skipped: update SSG_LOOKUP_EMAIL_1 / SSG_LOOKUP_LAST_NAME_1 in .env with a valid prod account email."
+    "SSG happy-path skipped: update SSG_LOOKUP_EMAIL_1 / SSG_LOOKUP_LAST_NAME_1 in .env with a valid account email for the target environment."
   );
   const vacation = new VacationPage(page);
 
@@ -133,7 +128,7 @@ test("C60933 SP - User inputs a valid email address with leading spaces", async 
 }) => {
   test.skip(
     ssgHappyPathSkip,
-    "SSG happy-path skipped: update SSG_LOOKUP_EMAIL_1 / SSG_LOOKUP_LAST_NAME_1 in .env with a valid prod account email."
+    "SSG happy-path skipped: update SSG_LOOKUP_EMAIL_1 / SSG_LOOKUP_LAST_NAME_1 in .env with a valid account email for the target environment."
   );
   const vacation = new VacationPage(page);
 

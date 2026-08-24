@@ -21,7 +21,7 @@ import vacationData from "../test-data/vacationFixture";
  */
 test.describe("Update reservation details", () => {
   // advanceToGuestsWithFlights runs the full portal-login → vacation → room →
-  // flights → guests journey — allow extra time on slow prod env.
+  // flights → guests journey — allow extra time on a slow environment.
   test.setTimeout(200_000);
 
   test("C59560 HP - Change Flights CTA returns to the Roundtrip Flights step", async ({
