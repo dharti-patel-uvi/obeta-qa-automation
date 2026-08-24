@@ -34,7 +34,7 @@ export class TAPortalPage extends BasePage {
       .first();
     // The password field has no accessible name and its "Password" label is not
     // associated with the input, so role-name / getByLabel don't resolve it.
-    // Verified against the live prod portal: the input carries a stable id
+    // Verified against the live portal: the input carries a stable id
     // (#login-password-input); fall back to type= in case that drifts.
     this.passwordInput = page
       .locator("#login-password-input")
@@ -45,7 +45,7 @@ export class TAPortalPage extends BasePage {
     });
     // Control that launches the OBE booking engine from the portal. On the
     // authenticated dashboard this is an anchor (role=link). Verified against the
-    // live prod portal: the link is labelled "Book / Quote"; keep the older
+    // live portal: the link is labelled "Book / Quote"; keep the older
     // "Make a Booking" wording as a fallback for other environments.
     this.bookOrQuoteLink = page.getByRole("link", { name: "Book / Quote" });
     this.bookNowButton = page.getByText("BOOK NOW");

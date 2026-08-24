@@ -25,7 +25,7 @@ import {
  */
 test.describe("Step 3 - Quote Review", () => {
   // Quote flow navigates through portal login + OBETA launch + vacation form +
-  // room listing + add-to-quote + review — allow extra time on slow prod env.
+  // room listing + add-to-quote + review — allow extra time on a slow env.
   test.setTimeout(150_000);
 
   test("C59779 HP - User sends a quote (email to QA inbox)", async ({

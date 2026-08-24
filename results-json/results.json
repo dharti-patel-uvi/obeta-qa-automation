@@ -1,0 +1,2142 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\UVI Automation\\Automation Project\\obeta-qa-automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--list"
+    ],
+    "configFile": "C:\\UVI Automation\\Automation Project\\obeta-qa-automation\\playwright.config.ts",
+    "rootDir": "C:/UVI Automation/Automation Project/obeta-qa-automation/test",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/UVI Automation/Automation Project/obeta-qa-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/UVI Automation/Automation Project/obeta-qa-automation/test",
+        "testIgnore": [
+          "**/test-1.spec.ts",
+          "**/test-2.spec.ts",
+          "**/test-3.spec.ts",
+          "**/_diag*.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 150000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "./results-json/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "embedAnnotationsAsProperties": true,
+          "outputFile": "./test-results/junit-report.xml"
+        }
+      ],
+      [
+        "dot",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 3,
+      "threshold": 180000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "adjoiningRooms.spec.ts",
+      "file": "adjoiningRooms.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "C59123 HP - \"i\" more information icon",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "80d72ea8f2723bf37ffd-a3df3cd69c3afadf63e9",
+          "file": "adjoiningRooms.spec.ts",
+          "line": 14,
+          "column": 5
+        },
+        {
+          "title": "C59124 HP - User checks the \"I would like to request adjoining rooms\" checkbox",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "80d72ea8f2723bf37ffd-f1be0734e4c6a9e942b2",
+          "file": "adjoiningRooms.spec.ts",
+          "line": 29,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "complexScenarios.spec.ts",
+      "file": "complexScenarios.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Beaches + 5 guests + no flights + Pay Now with one credit card",
+          "file": "complexScenarios.spec.ts",
+          "line": 45,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Book without flights for 5 guests, reach Payment, fill card (no CVV, no submit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d2bff76059336505487f-6f198b92021bd5fc026b",
+              "file": "complexScenarios.spec.ts",
+              "line": 46,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Sandals + default guests + no flights + Pay Now with one credit card",
+          "file": "complexScenarios.spec.ts",
+          "line": 114,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Book without flights for default guests, reach Payment, fill card (no CVV, no submit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d2bff76059336505487f-d0c1495a6a9b19b803e0",
+              "file": "complexScenarios.spec.ts",
+              "line": 115,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Sandals + default guests + flights + Over-The-Water  Bungalow + Pay Now with two credit cards",
+          "file": "complexScenarios.spec.ts",
+          "line": 166,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Book a room by name with flights, reach Payment, two credit cards (no CVV, no submit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d2bff76059336505487f-bc0becea6963031e55ed",
+              "file": "complexScenarios.spec.ts",
+              "line": 167,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Beaches + default guests + flights + Pay Now with two credit cards",
+          "file": "complexScenarios.spec.ts",
+          "line": 242,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Book a room by name with flights, reach Payment, two credit cards (no CVV, no submit)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d2bff76059336505487f-e7f9ba00c78a8cfea065",
+              "file": "complexScenarios.spec.ts",
+              "line": 243,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "SSG Look up + Apply points + hold room for $98",
+          "file": "complexScenarios.spec.ts",
+          "line": 311,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - SSG Look up in step one and apply points in Guest information step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "d2bff76059336505487f-e2f1adfc32cb4c81217b",
+              "file": "complexScenarios.spec.ts",
+              "line": 318,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "continueWithoutFlights.spec.ts",
+      "file": "continueWithoutFlights.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Continue Without Flights skips flight selection",
+          "file": "continueWithoutFlights.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Continue Without Flights lands on Guests with no flight selected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ea7f4d3d96a7763bce4d-54cd27ad70d3abe086bb",
+              "file": "continueWithoutFlights.spec.ts",
+              "line": 21,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "filterResults.spec.ts",
+      "file": "filterResults.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Filters show accurate results",
+          "file": "filterResults.spec.ts",
+          "line": 22,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Rooms page",
+              "file": "filterResults.spec.ts",
+              "line": 23,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "HP - Oceanfront view filter returns only oceanfront rooms",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "1de4dbc3c7e4d04d3a96-00a5c1bd1309836d5d58",
+                  "file": "filterResults.spec.ts",
+                  "line": 24,
+                  "column": 9
+                },
+                {
+                  "title": "HP - Beachfront view filter returns only beachfront rooms",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "1de4dbc3c7e4d04d3a96-8005c657a7a35b3497bf",
+                  "file": "filterResults.spec.ts",
+                  "line": 39,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Flights page",
+              "file": "filterResults.spec.ts",
+              "line": 55,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "HP - Nonstop-only returns only nonstop itineraries",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "1de4dbc3c7e4d04d3a96-dc6b6559691c03bd01c0",
+                  "file": "filterResults.spec.ts",
+                  "line": 56,
+                  "column": 9
+                },
+                {
+                  "title": "HP - Sort Price Low→High orders flight results by price",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "1de4dbc3c7e4d04d3a96-b96636a7456385e51daf",
+                  "file": "filterResults.spec.ts",
+                  "line": 83,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "linksValidation.spec.ts",
+      "file": "linksValidation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Step 1 - Vacation > Links",
+          "file": "linksValidation.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Call Us link points at the reservations phone number",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "51add78d90ef1f978f3c-f4eb5af44a113e14c40b",
+              "file": "linksValidation.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "HP - Terms & Conditions opens the terms page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "51add78d90ef1f978f3c-de40590b3fce47b185c8",
+              "file": "linksValidation.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "HP - Privacy Policy opens the privacy page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "51add78d90ef1f978f3c-9275948f480917bdb9af",
+              "file": "linksValidation.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "HP - Cookie Preferences opens the cookie settings",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "51add78d90ef1f978f3c-7e7928694c90831078df",
+              "file": "linksValidation.spec.ts",
+              "line": 45,
+              "column": 7
+            },
+            {
+              "title": "HP - Best Price Guarantee opens its modal",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\UVI Automation\\Automation Project\\obeta-qa-automation\\test\\linksValidation.spec.ts",
+                        "line": 58,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "51add78d90ef1f978f3c-65815d453570395f35c1",
+              "file": "linksValidation.spec.ts",
+              "line": 58,
+              "column": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.ts",
+      "file": "login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "TA Portal - Agent sign-in",
+          "file": "login.spec.ts",
+          "line": 22,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Sign-in page shows the expected elements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-4212327eb9ebdeba1b6e",
+              "file": "login.spec.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "HP - Agent can sign in and reach the dashboard",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-3ca8168efe25976de0f0",
+              "file": "login.spec.ts",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "SP - Invalid credentials are rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "41d3fd2474a19feb00a1-9a676f8385205fbd635f",
+              "file": "login.spec.ts",
+              "line": 44,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "paymentValidation.spec.ts",
+      "file": "paymentValidation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Step 5 - Payment Page Required Field Validation",
+          "file": "paymentValidation.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SP - Clicking Pay Vacation with no card info shows required-field errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 180000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "015a00327c4c29a2835e-87d374f408ffa92c7aab",
+              "file": "paymentValidation.spec.ts",
+              "line": 24,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "pricingCarryover.spec.ts",
+      "file": "pricingCarryover.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Pricing carry-over: Room -> Guests",
+          "file": "pricingCarryover.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Room total shown on the Room step is reflected on the Guests step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "904225220ea778b22ee7-d905a8eefdfce65ef877",
+              "file": "pricingCarryover.spec.ts",
+              "line": 18,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "quoteFlow.spec.ts",
+      "file": "quoteFlow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Step 3 - Quote Review",
+          "file": "quoteFlow.spec.ts",
+          "line": 26,
+          "column": 6,
+          "specs": [
+            {
+              "title": "C59779 HP - User sends a quote (email to QA inbox)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "80aea6c22b01c35c0aca-3098c7850eb49a08814b",
+              "file": "quoteFlow.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "C59776 HP - View Room CTA",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "80aea6c22b01c35c0aca-9a088c4a39a7719dc46d",
+              "file": "quoteFlow.spec.ts",
+              "line": 52,
+              "column": 7
+            },
+            {
+              "title": "C59777 HP - Remove from Quote CTA",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "80aea6c22b01c35c0aca-e53bbf45ec73b7a97ac1",
+              "file": "quoteFlow.spec.ts",
+              "line": 65,
+              "column": 7
+            },
+            {
+              "title": "C59778 HP - Back to Rooms CTA",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "80aea6c22b01c35c0aca-b5aa05a143022d3d64e4",
+              "file": "quoteFlow.spec.ts",
+              "line": 77,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "requiredFieldValidation.spec.ts",
+      "file": "requiredFieldValidation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Required Field Validation - Book Now Flow",
+          "file": "requiredFieldValidation.spec.ts",
+          "line": 20,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Step 1 - Vacation",
+              "file": "requiredFieldValidation.spec.ts",
+              "line": 23,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "SP - Blank submission shows required-field errors for resort and dates",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "5a7826b2e55ead799542-fbee8b4c61463b85b2c8",
+                  "file": "requiredFieldValidation.spec.ts",
+                  "line": 24,
+                  "column": 9
+                },
+                {
+                  "title": "SP - Resort left blank (destination + dates filled) shows resort error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "5a7826b2e55ead799542-b0ab6539f5fad839eb33",
+                  "file": "requiredFieldValidation.spec.ts",
+                  "line": 46,
+                  "column": 9
+                },
+                {
+                  "title": "SP - Dates left blank (destination + resort filled) shows dates error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "5a7826b2e55ead799542-2dc698368ea64c76f59c",
+                  "file": "requiredFieldValidation.spec.ts",
+                  "line": 70,
+                  "column": 9
+                },
+                {
+                  "title": "SP - Flights add-on: departure city left blank shows departure city error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "5a7826b2e55ead799542-c614217a9b82cd603062",
+                  "file": "requiredFieldValidation.spec.ts",
+                  "line": 90,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Step 4 - Guest Information",
+              "file": "requiredFieldValidation.spec.ts",
+              "line": 120,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "SP - Blank submission shows required-field errors for all primary and additional guest fields",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 150000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [],
+                      "status": "skipped"
+                    }
+                  ],
+                  "id": "5a7826b2e55ead799542-234a68a63aed44b752ba",
+                  "file": "requiredFieldValidation.spec.ts",
+                  "line": 124,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "roomCodeHoldAmount.spec.ts",
+      "file": "roomCodeHoldAmount.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Beaches: Room selection, room code assertion, and hold amount validation",
+          "file": "roomCodeHoldAmount.spec.ts",
+          "line": 171,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Butler Elite room code and hold amount shown at Guests step; persist after resort change and Keep This Room flow (Beaches Negril → Beaches Turks & Caicos)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 360000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "49ae5d9c40a9cd9f834b-15c0cff522e434107519",
+              "file": "roomCodeHoldAmount.spec.ts",
+              "line": 176,
+              "column": 7
+            }
+          ]
+        },
+        {
+          "title": "Sandals: Room category and hold amount validation",
+          "file": "roomCodeHoldAmount.spec.ts",
+          "line": 402,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - SGL: Over-The-Water Bungalow at Sandals Grande St. Lucian shows $2,500 hold amount",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "49ae5d9c40a9cd9f834b-cc226e38082f57d1db42",
+              "file": "roomCodeHoldAmount.spec.ts",
+              "line": 430,
+              "column": 7
+            },
+            {
+              "title": "HP - SWH: Over-The-Water Bungalow at Sandals South Coast shows $2,500 hold amount",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "49ae5d9c40a9cd9f834b-72fd308699c7c116bdf9",
+              "file": "roomCodeHoldAmount.spec.ts",
+              "line": 503,
+              "column": 7
+            },
+            {
+              "title": "HP - SRC: Seaside Bungalow at Sandals Royal Curaçao shows $1,000 hold amount",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "49ae5d9c40a9cd9f834b-0a45cf009aee2d90bd43",
+              "file": "roomCodeHoldAmount.spec.ts",
+              "line": 582,
+              "column": 7
+            },
+            {
+              "title": "HP - SCR: Over-the-water villa and Over-the-water bungalows at Sandals Caribbean Cay shows $2,500 hold amount",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "49ae5d9c40a9cd9f834b-e6eda7bc1d6c55758821",
+              "file": "roomCodeHoldAmount.spec.ts",
+              "line": 682,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "roomDetails.spec.ts",
+      "file": "roomDetails.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Step 2b - Room Details",
+          "file": "roomDetails.spec.ts",
+          "line": 22,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Number of nights shown on Room Details",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e89a4381cf0bfb43a107-c12e2413cb1b5863f5b9",
+              "file": "roomDetails.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "HP - Change dates on Room Details page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "e89a4381cf0bfb43a107-1b4330ef0e0f5c6cbb43",
+              "file": "roomDetails.spec.ts",
+              "line": 33,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "singleGuestBeaches.spec.ts",
+      "file": "singleGuestBeaches.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Single guest - Beaches",
+          "file": "singleGuestBeaches.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Book a Beaches vacation for a single guest through the Room step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c91e70146c8bd5d4bc43-4874e9fcbe0ba6298032",
+              "file": "singleGuestBeaches.spec.ts",
+              "line": 16,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "soldOutReselect.spec.ts",
+      "file": "soldOutReselect.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Sold Out room - reselect dates",
+          "file": "soldOutReselect.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Reselecting new dates recovers availability for a sold-out room",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c60622577debbaa8d193-05a3ca8801fed2e30f94",
+              "file": "soldOutReselect.spec.ts",
+              "line": 20,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ssgModal.spec.ts",
+      "file": "ssgModal.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "C59098 HP - \"Look it up\" CTA",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-e132a09df84ccc05e058",
+          "file": "ssgModal.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "C60931 HP - Start a new search CTA",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-6f00bb0e4d9a6a76405a",
+          "file": "ssgModal.spec.ts",
+          "line": 38,
+          "column": 5
+        },
+        {
+          "title": "C59099 SP - User inputs an invalid email address",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-51c13c1004a671d869b8",
+          "file": "ssgModal.spec.ts",
+          "line": 58,
+          "column": 5
+        },
+        {
+          "title": "C59102 SP - User inputs an email address not linked to an SSG number",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-728de865b6709d431125",
+          "file": "ssgModal.spec.ts",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "title": "C59103 SP - User makes a blank input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-259a2cf07ed0d9db3be5",
+          "file": "ssgModal.spec.ts",
+          "line": 79,
+          "column": 5
+        },
+        {
+          "title": "C59104 SP - User inputs special characters",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-73311560b653f6c4e111",
+          "file": "ssgModal.spec.ts",
+          "line": 88,
+          "column": 5
+        },
+        {
+          "title": "C59105 SP - User inputs numbers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-9655fbdd782efec2022e",
+          "file": "ssgModal.spec.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "C60932 SP - User inputs a valid email address with trailing spaces",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-dd1a46d3c5c5787067da",
+          "file": "ssgModal.spec.ts",
+          "line": 108,
+          "column": 5
+        },
+        {
+          "title": "C60933 SP - User inputs a valid email address with leading spaces",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "ee847c860674c93d6b92-438f0f2fe93bb0b7b346",
+          "file": "ssgModal.spec.ts",
+          "line": 126,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "startQuote.spec.ts",
+      "file": "startQuote.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "C59106 HP - User inputs a valid vacation input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fccc46e019d38b708583-21c9a11be49826dddd3a",
+          "file": "startQuote.spec.ts",
+          "line": 17,
+          "column": 5
+        },
+        {
+          "title": "C59107 SP - User makes a blank input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fccc46e019d38b708583-f90902f42d79f7e9cff3",
+          "file": "startQuote.spec.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "C59108 SP - User picks a destination, but leaves the Resort dropdown blank",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fccc46e019d38b708583-47d2770fa9eb04a8629a",
+          "file": "startQuote.spec.ts",
+          "line": 45,
+          "column": 5
+        },
+        {
+          "title": "C59109 HP - Clear Dates CTA",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fccc46e019d38b708583-15fb0230ab9402c000d2",
+          "file": "startQuote.spec.ts",
+          "line": 62,
+          "column": 5
+        },
+        {
+          "title": "C60936 SP - User tries to book less than 3 nights",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "location": {
+                    "file": "C:\\UVI Automation\\Automation Project\\obeta-qa-automation\\test\\startQuote.spec.ts",
+                    "line": 82,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fccc46e019d38b708583-ac90475903c7aae07bd8",
+          "file": "startQuote.spec.ts",
+          "line": 82,
+          "column": 6
+        },
+        {
+          "title": "C59110 SP - User doesn't input the number of guests",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "location": {
+                    "file": "C:\\UVI Automation\\Automation Project\\obeta-qa-automation\\test\\startQuote.spec.ts",
+                    "line": 101,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fccc46e019d38b708583-bedb507292704f027ce6",
+          "file": "startQuote.spec.ts",
+          "line": 101,
+          "column": 6
+        },
+        {
+          "title": "HP - Send Quote shows the no-airfare note, not flight options (CLAUDE.md)",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "fccc46e019d38b708583-c4566b9a116debc81acd",
+          "file": "startQuote.spec.ts",
+          "line": 124,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "startQuoteSsgModal.spec.ts",
+      "file": "startQuoteSsgModal.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "C59117 HP - \"Look it up\" CTA",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-d4514ed2236d48e261cb",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 22,
+          "column": 5
+        },
+        {
+          "title": "C60919 HP - Start a new search CTA",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-ec3411699c16d26a977e",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 40,
+          "column": 5
+        },
+        {
+          "title": "C59118 SP - User inputs an invalid email address",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-1242f0004993ed7336f8",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 57,
+          "column": 5
+        },
+        {
+          "title": "C59119 SP - User inputs an email address not linked to an SSG number",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-fb0739ffb18d763c620c",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 67,
+          "column": 5
+        },
+        {
+          "title": "C59120 SP - User makes a blank input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-9e478237f12d41892a08",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 79,
+          "column": 5
+        },
+        {
+          "title": "C59121 SP - User inputs special characters",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-1d005b7fa656c8d5466d",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 88,
+          "column": 5
+        },
+        {
+          "title": "C59122 SP - User inputs numbers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-c1a4378ca866b866865c",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 98,
+          "column": 5
+        },
+        {
+          "title": "C60934 SP - User inputs a valid email address with trailing spaces",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-9b8c20a2ade86fcf14d9",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 108,
+          "column": 5
+        },
+        {
+          "title": "C60935 SP - User inputs a valid email address with leading spaces",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "354f7cee1f0fcc525709-7a06a993d3fa072b631d",
+          "file": "startQuoteSsgModal.spec.ts",
+          "line": 125,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "updateReservation.spec.ts",
+      "file": "updateReservation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Update reservation details",
+          "file": "updateReservation.spec.ts",
+          "line": 22,
+          "column": 6,
+          "specs": [
+            {
+              "title": "C59560 HP - Change Flights CTA returns to the Roundtrip Flights step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3e16444a1b1ce4a0b6c5-cc3d4f958288c850b315",
+              "file": "updateReservation.spec.ts",
+              "line": 27,
+              "column": 7
+            },
+            {
+              "title": "HP - Start Over cancel keeps the user on the Guests step",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3e16444a1b1ce4a0b6c5-b870f7469a8d1af85435",
+              "file": "updateReservation.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "HP - Change dates from the Room Details page updates the stay",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3e16444a1b1ce4a0b6c5-8331a7a2e99e2856d11d",
+              "file": "updateReservation.spec.ts",
+              "line": 44,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "vacation.spec.ts",
+      "file": "vacation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "C59089 HP - User makes a valid vacation input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-862a09ee04d4955b4b6e",
+          "file": "vacation.spec.ts",
+          "line": 13,
+          "column": 5
+        },
+        {
+          "title": "C59091 SP - User makes a blank input",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-0ad9978fb067f5d61079",
+          "file": "vacation.spec.ts",
+          "line": 36,
+          "column": 5
+        },
+        {
+          "title": "C59090 SP - User picks a destination, but leaves the Resort dropdown blank",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-0f15c13bb00c4d984a20",
+          "file": "vacation.spec.ts",
+          "line": 47,
+          "column": 5
+        },
+        {
+          "title": "C59092 HP - Clear Dates CTA",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-902aae5bc8a26dc8d65f",
+          "file": "vacation.spec.ts",
+          "line": 64,
+          "column": 5
+        },
+        {
+          "title": "C59497 SP - User tries to book less than 3 nights",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-c7791c4ec658914c5604",
+          "file": "vacation.spec.ts",
+          "line": 86,
+          "column": 5
+        },
+        {
+          "title": "C59093 SP - User doesn't input the number of guests",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [
+                {
+                  "type": "fixme",
+                  "location": {
+                    "file": "C:\\UVI Automation\\Automation Project\\obeta-qa-automation\\test\\vacation.spec.ts",
+                    "line": 103,
+                    "column": 6
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-4ac3e2671c226905a596",
+          "file": "vacation.spec.ts",
+          "line": 103,
+          "column": 6
+        },
+        {
+          "title": "C59094 HP - User makes a valid booking input, and adds Economy flights",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-76cbe168965bde809656",
+          "file": "vacation.spec.ts",
+          "line": 119,
+          "column": 5
+        },
+        {
+          "title": "C59097 HP - User adds flights, and requests First Class flights",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-cf0386f422e5bb1d23ef",
+          "file": "vacation.spec.ts",
+          "line": 141,
+          "column": 5
+        },
+        {
+          "title": "C59095 SP - User adds flights, but inputs an invalid departure city",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-ad3a65f4e81c1f26d936",
+          "file": "vacation.spec.ts",
+          "line": 164,
+          "column": 5
+        },
+        {
+          "title": "C59096 SP - User adds flights, but leaves the departure city blank",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-cc5611fd9eb14f0438c0",
+          "file": "vacation.spec.ts",
+          "line": 177,
+          "column": 5
+        },
+        {
+          "title": "C59100 SP - User adds flights, and inputs special characters",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-8538a426e9cd524fc1c9",
+          "file": "vacation.spec.ts",
+          "line": 189,
+          "column": 5
+        },
+        {
+          "title": "C59101 SP - User adds flights, and inputs numbers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "dbde79abda55096631d5-94a3f60a2c6d7ac32864",
+          "file": "vacation.spec.ts",
+          "line": 202,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "viewRoomDetails.spec.ts",
+      "file": "viewRoomDetails.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "View Room Details CTA",
+          "file": "viewRoomDetails.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "HP - Opens the room details modal from the room card",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ba48743a62fe026952cd-e91b74258a48d798e5b0",
+              "file": "viewRoomDetails.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "HP - Room details modal contains a key room feature",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 150000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ba48743a62fe026952cd-ad7d78bd29e50633e593",
+              "file": "viewRoomDetails.spec.ts",
+              "line": 31,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-24T18:51:16.919Z",
+    "duration": 111.99799999999993,
+    "expected": 0,
+    "skipped": 82,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
