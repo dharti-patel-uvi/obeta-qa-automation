@@ -219,12 +219,12 @@ test.describe("Beaches: Room selection, room code assertion, and hold amount val
           const d = new Date();
           d.setDate(15);
           d.setMonth(d.getMonth() + 11 + dateOffset);
-          // await room.changeVacationDates(
-          //   d.toLocaleDateString("en-US", { month: "long" }),
-          //   "15",
-          //   "18",
-          //   d.getFullYear().toString()
-          // );
+          await room.changeVacationDates(
+            d.toLocaleDateString("en-US", { month: "long" }),
+            "15",
+            "18",
+            d.getFullYear().toString()
+          );
           dateOffset++;
         }
 

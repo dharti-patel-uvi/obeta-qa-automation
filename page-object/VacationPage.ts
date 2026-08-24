@@ -142,9 +142,14 @@ export class VacationPage extends BasePage {
     });
 
     // Footer / informational links. [OBETA-TODO]
-    this.callUsLink = page.getByRole("link", {
-      name: /Call Us|SANDALS|\d-888/i,
-    });
+    // [OBETA-TODO] The agent footer phone link's accessible name varies across
+    // builds ("Call Us", "1-888-SANDALS", etc.). Fall back to any <a href="tel:">
+    // so the test stays stable regardless of copy — the href assertion in
+    // linksValidation proves the link IS a phone link.
+    this.callUsLink = page
+      .getByRole("link", { name: /Call Us|SANDALS|\d-888/i })
+      .or(page.locator('a[href^="tel:"]'))
+      .first();
     this.termsAndConditionsLink = page.getByRole("link", {
       name: /Terms (&|and) Conditions/i,
     });

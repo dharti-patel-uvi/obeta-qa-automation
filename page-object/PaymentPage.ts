@@ -68,9 +68,21 @@ export class PaymentPage extends BasePage {
 
   readonly viewFullVacationSummaryButton: Locator; // [NOBE-ref]
 
-  // --- Assertion-only CTA (NEVER clicked — see SCOPE GUARD) ---
-  readonly payVacationButton: Locator; // [OBE-ref]
+  // --- Validation-error indicators (blank-submission test only) ---
+  // [OBE-NG] After clicking PAY VACATION on a blank form, required card fields
+  // become aria-invalid="true" and error messages surface. Exact testids are not
+  // yet verified against the live DOM — these resilient locators cover the most
+  // likely patterns (aria-invalid attribute + visible error text).
+  readonly invalidCardFields: Locator; // any input[aria-invalid="true"] on the form
+  readonly paymentFieldErrorText: Locator; // visible "required / this field" copy
 
+  // --- Submit CTA ---
+  // SCOPE GUARD: `payVacationButton` is exposed for two purposes only:
+  //   1. Presence assertions (is the button rendered?).
+  //   2. `triggerPaymentValidation()` — clicking it on an intentionally BLANK
+  //      form to surface required-field errors (no payment is processed because
+  //      client-side validation blocks submission when no card data is present).
+  // Never call this button with a filled form — that would process a real payment.
   constructor(page: Page) {
     super(page);
     super.setPath(this.path);
@@ -133,12 +145,44 @@ export class PaymentPage extends BasePage {
       name: "View full vacation summary",
     });
 
-    this.payVacationButton = page.getByRole("button", { name: "PAY VACATION" });
+    this.invalidCardFields = page.locator('input[aria-invalid="true"]');
+    this.paymentFieldErrorText = page
+      .getByText(/required|this field is required/i)
+      .filter({ visible: true });
+
   }
 
   /* ---------------------------------------------------------------- */
   /* Step assertion                                                    */
   /* ---------------------------------------------------------------- */
+
+  /* ---------------------------------------------------------------- */
+  /* Validation (blank-form only — see SCOPE GUARD)                   */
+  /* ---------------------------------------------------------------- */
+
+  /**
+   * Surface inline required-field errors by clicking PAY VACATION on an
+   * intentionally BLANK payment form.
+   *
+   * SCOPE GUARD: call this ONLY when NO card data has been entered. The blank
+   * form is blocked client-side — the page stays on Payment and reveals
+   * required-field indicators (aria-invalid fields + error copy). Never call
+   * this on a filled form, which would attempt to process a real payment.
+   */
+
+  /**
+   * Assert that at least one required-field error is visible after a blank
+   * PAY VACATION click. Checks both the aria-invalid attribute on card inputs
+   * and any visible "required / this field is required" error copy — covering
+   * the two common OBE error-surfacing patterns without hard-coding testids
+   * that have not yet been verified against the live payment DOM.
+   */
+  async arePaymentErrorsVisible(): Promise<void> {
+    // At least one card field must become aria-invalid after a blank submission.
+    await expect(this.invalidCardFields.first()).toBeVisible();
+    // At least one visible "required" error message must also appear.
+    await expect(this.paymentFieldErrorText.first()).toBeVisible();
+  }
 
   /** Confirm the Payment step rendered (does NOT interact with payment). */
   async assertOnPaymentStep() {

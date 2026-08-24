@@ -295,10 +295,14 @@ export class FlightsPage extends BasePage {
 
   /** [OBE-NG] Sort ascending and assert the first ~5 prices are non-decreasing. */
   async checkPriceLowToHigh() {
-    await this.sortBy(/Price Low to High/i);
-    // Wait for the list to re-render after the sort change before reading prices.
-    // OBE-NG reference had a commented-out waitForTimeout(1000) flagging this race.
+    // The sort option renders as "Price: Low To High" in the live DOM (colon
+    // after "Price") — the regex must tolerate the optional colon and any casing.
+    await this.sortBy(/Price:?\s*Low\s*to\s*High/i);
+    // Wait for the list to re-render. The OBE sort triggers a client-side
+    // re-order; waitForLoadingToClear catches any spinner, then a fixed settle
+    // gives the virtual list time to repaint before reading prices.
     await this.waitForLoadingToClear();
+    await this.page.waitForTimeout(500);
     await this.roomFlightPrice.first().waitFor({ state: "visible" });
     const prices = await this.flightPrices();
     expect(
@@ -312,8 +316,9 @@ export class FlightsPage extends BasePage {
 
   /** [OBE-NG] Sort descending and assert the first ~5 prices are non-increasing. */
   async checkPriceHighToLow() {
-    await this.sortBy(/Price High to Low/i);
+    await this.sortBy(/Price:?\s*High\s*to\s*Low/i);
     await this.waitForLoadingToClear();
+    await this.page.waitForTimeout(500);
     await this.roomFlightPrice.first().waitFor({ state: "visible" });
     const prices = await this.flightPrices();
     expect(

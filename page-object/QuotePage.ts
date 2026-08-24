@@ -180,12 +180,31 @@ export class QuotePage extends BasePage {
     firstName = "QA",
     lastName = "Tester"
   ): Promise<void> {
-    // From the quote cart, open the Finalize Quote form (/review/).
-    if (await this.finalizeQuoteLink.isVisible().catch(() => false)) {
-      await this.clickWhenReady(this.finalizeQuoteLink);
-      await this.page
-        .waitForURL(/review/i, { timeout: 60000 })
-        .catch(() => undefined);
+    // Navigate to the Finalize Quote form (/review/) — but only if we aren't
+    // already there. The cart drawer can auto-dismiss after assertOnQuoteReview,
+    // so re-open it first when the FINALIZE QUOTE link is no longer visible.
+    if (!this.page.url().includes("review")) {
+      if (
+        !(await this.finalizeQuoteLink
+          .isVisible({ timeout: 3000 })
+          .catch(() => false))
+      ) {
+        // Re-open the cart drawer via the "Quote N" badge button.
+        if (await this.quoteCartButton.isVisible().catch(() => false)) {
+          await this.quoteCartButton.click();
+          await this.page.waitForTimeout(500);
+        }
+      }
+      if (
+        await this.finalizeQuoteLink
+          .isVisible({ timeout: 5000 })
+          .catch(() => false)
+      ) {
+        await this.clickWhenReady(this.finalizeQuoteLink);
+        await this.page
+          .waitForURL(/review/i, { timeout: 60000 })
+          .catch(() => undefined);
+      }
     }
 
     await this.fillSafe(this.firstNameInput, firstName);
